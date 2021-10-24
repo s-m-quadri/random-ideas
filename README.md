@@ -1,4 +1,4 @@
-### :balance_scale: IN THE NAME OF ALLAH THE MOST AND FOREVER MERCIFUL
+### :balance_scale: In The Name Of Allah The Most And Forever Merciful
 
 
 #  PROGRAMMING IDEAS
@@ -15,7 +15,7 @@
 :octocat: Maybe Helpful for practice.
 
 
-## :paperclip: Link 
+## Link 
 
 ``` 
 https://github.com/s-m-quadri/random-ideas.git
@@ -23,4 +23,4 @@ https://github.com/s-m-quadri/random-ideas.git
 
 
 
-## THANK YOU VERY MUCH for visiting
+## Thank You Very Much For Visiting
