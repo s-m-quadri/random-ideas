@@ -28,10 +28,14 @@
 # [STEP 01] Ignore All files
 */*
 
-# [STEP 02] Except the working ones
-!*/color_cs50
+# [STEP 02] Except the essential ones
+!/LICENSE
+!/README.md
 !/.gitignore
 !*/.gitignore
+
+# [STEP 03] Except the working ones
+!*/color_cs50
 !**.c
 !**.h
 !**.java
