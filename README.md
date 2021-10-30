@@ -2,9 +2,6 @@
 
 
 #  PROGRAMMING IDEAS
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=s-m-quadri&show_icons=true&theme=radical)
-
-
 
 # Purpose
 
@@ -23,6 +20,7 @@
 https://github.com/s-m-quadri/random-ideas.git
 ```
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=s-m-quadri&show_icons=true)
 
 
 ## Thank You Very Much For Visiting
