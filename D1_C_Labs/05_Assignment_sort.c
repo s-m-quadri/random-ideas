@@ -1,6 +1,4 @@
-
-
-// By 5MQuadr!
+// By 5MQuadr! (s-m-quadri@github , 26107@diems2021)
 // Last Updated On : 14th November 2021
 
 
@@ -48,8 +46,9 @@ int get_size(){
 
 void get_array(int *array, int its_size){
 	printf("Enter the %d elements : \n", its_size);
-	printf("🔹️ ", its_size);
+	
 	for (int i = 0 ; i < its_size ; i++) {
+		printf("🔹️ Enter Element (%d) : ",i+1);
 		scanf("%d" , &array[i]);
 	}
 }
