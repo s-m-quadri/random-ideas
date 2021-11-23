@@ -50,13 +50,17 @@ int main(){
 // #########################
 int count(char key , char *name){
 	int count = 0;
+	// Counting the number of occurrence
 	for (int i = 0 ; name[i] != '\0' ; i++) if (name[i] == key) count++;
 	return count;
 }
 
 void Sentenced_case(char *string){
 	for (int i = 0 ; string[i] != '\0' ; i++) {
+		// "Very first letter" or "first letter after space" of name is there
+		// Capitalize it
 		if (string[i-1] == ' ' || i == 0) string[i] = toupper(string[i]);
+		// Small "all the other" letters
 		else string[i] = tolower(string[i]);
 	}
 }
