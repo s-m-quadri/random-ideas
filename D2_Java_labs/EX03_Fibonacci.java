@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Fibonacci{
+public class EX03_Fibonacci{
 	
 	public static void main(String args[]){
 	

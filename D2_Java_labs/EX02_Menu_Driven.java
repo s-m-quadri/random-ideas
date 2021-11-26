@@ -5,14 +5,14 @@
 
 import java.util.Scanner;
 
-public class Student{
+public class EX02_Menu_Driven{
 	public static void main(String arguments[]){
-		Student s1 = new Student();
+		EX02_Menu_Driven s1 = new EX02_Menu_Driven();
 		s1.main_menu();
 	}
 
 	// No-arguments Constructor
-	Student(){
+	EX02_Menu_Driven(){
 		roll_no=0;
 		name="unknown";
 		m1=0;

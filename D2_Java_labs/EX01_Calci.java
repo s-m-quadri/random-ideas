@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Calci{
+class EX01_Calci{
 	public static void main(String args[]){
 	Scanner scan = new Scanner(System.in);
 	Calci_obj obj = new Calci_obj();
