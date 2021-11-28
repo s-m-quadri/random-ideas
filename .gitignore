@@ -29,6 +29,7 @@
 
 # [STEP 01] Ignore All files
 */*
+!/D1*/Data*
 
 # [STEP 02] Except the essential ones
 !/LICENSE

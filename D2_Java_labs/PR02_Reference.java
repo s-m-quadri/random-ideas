@@ -23,7 +23,7 @@ Date of Conduction
 */
  
 
-class PR2_Reference 
+class PR02_Reference 
 
 {     
 
@@ -67,7 +67,7 @@ class PR2_Reference
 
           //This is No Argument constructor 
 
-          PR2_Reference() 
+          PR02_Reference() 
 
               { 
 
@@ -83,7 +83,7 @@ class PR2_Reference
 
  
 
-          PR2_Reference(double m1, String fName, String lName) 
+          PR02_Reference(double m1, String fName, String lName) 
 
             { 
 

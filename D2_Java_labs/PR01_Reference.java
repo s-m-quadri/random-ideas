@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 
-public class PR1_Reference{ 
+public class PR01_Reference{ 
 	public static void main(String[] args) { 
 		Scanner sc=new Scanner(System.in); 
 		int no; 
