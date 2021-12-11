@@ -2,15 +2,15 @@
 // Last Updated on : 26th November 2021
 
 
-// #####################
-//     PRACTICAL 02
-// #####################
-
 /*
-------------------
-  INSTRUCTIONS:
-  Write a program to implement class, object and constructor overloading.
-------------------
+===================
+   PRACTICAL 02
+===================
+
+	Write a program to implement class, object and constructor overloading.
+
+Instructions
+~~~~~~~~~~~~
 	1. Create a class called Employee that includes three instance variables
 	 - a first name (type String), a last name (type String) and a monthly salary (double).
 	2. Implement constructor overloading and initialize variables. 
@@ -19,11 +19,18 @@
 	5. Write a test application named EmployeeTest that demonstrate class Employee’s capabilities. 
 	6. Create two Employee objects and display each object’s yearly salary. 
 	7. Then give each Employee a 10% raise and display each Employee’s salary again. 
+	
+Journal write up 
+~~~~~~~~~~~~~~~~
+	1. class definition and syntax.
+	2. object definition and object instantiation.
+	3. constructor and types of constructor.
+	4. constructor overloading.
 */
 
 
 import java.util.Scanner;
-public class PR02_EmployeeTest{
+class Main{
 	public static void main(String args[]){
 		Scanner scan = new Scanner(System.in);
 		

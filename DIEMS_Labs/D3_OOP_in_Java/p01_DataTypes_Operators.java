@@ -9,7 +9,7 @@
 //        Arithmetic program.
 // ################################
 
-class PR01_DataTypes_Operators{
+class Main{
 	public static void main(String arg[]){
 		byte var1 = 7;
 		int var2 = 8;

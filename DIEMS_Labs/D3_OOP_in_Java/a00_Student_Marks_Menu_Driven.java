@@ -1,18 +1,18 @@
 
-// By SYED MINNATULLAH (s-m-quadri@github.com)
-// Last Updated on : 14th November 2021 - 2:25 PM
-// Version : 1.0.0
+// By 5MQuadr! (s-m-quadri@github , 26107@diems2020-24)
+// Last Updated on : 11th December 2021 - 2:25 PM
+// Version : 1.0.1
 
 import java.util.Scanner;
 
-public class EX02_Menu_Driven{
+class Main{
 	public static void main(String arguments[]){
-		EX02_Menu_Driven s1 = new EX02_Menu_Driven();
+		Main s1 = new Main();
 		s1.main_menu();
 	}
 
 	// No-arguments Constructor
-	EX02_Menu_Driven(){
+	Main(){
 		roll_no=0;
 		name="unknown";
 		m1=0;
