@@ -29,9 +29,10 @@
 
 
 # [STEP 02] Except the essential ones
-!/DIEMS_Labs/D*
-!/Practice_Programs/C
-!/Practice_Programs/Java
+!/DIEMS*/D*
+!/DIEMS*/D*/CollageCodes
+!/Practice*/C
+!/Practice*/Java
 !/LICENSE
 !/README.md
 !/.gitignore
