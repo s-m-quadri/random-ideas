@@ -1,5 +1,5 @@
 // By 5MQuadr! (s-m-quadri@github , 26107@diems2020-24)
-// Last Updated on : 22nd December 2021
+// Last Updated on : 23rd December 2021
 
 
 // ###########################
@@ -10,6 +10,7 @@
 #include <string.h>
 enum {true = 1 , false = 0};
 struct node{
+	struct node *prev;
 	int data;
 	struct node *next;
 };
@@ -34,6 +35,8 @@ void insert(){
 	if (count == 1){
 		struct node *temp = (struct node*) malloc(sizeof(struct node));
 		temp -> data = input;
+		temp -> prev = NULL; // addition
+		if(start != NULL) start -> prev = temp; // addition
 		temp -> next = start;
 		start = temp;
 		return;
@@ -44,7 +47,9 @@ void insert(){
 		if (--count == 1) {
 			struct node *temp = (struct node*) malloc(sizeof(struct node));
 			temp -> data = input;
+			temp -> prev = ptr; // addition
 			temp -> next = ptr -> next;
+			ptr -> next -> prev = temp;
 			ptr -> next = temp;
 			return;
 		}
@@ -83,6 +88,9 @@ void delete(){
 	if ((count == 1) && (start -> next != NULL)){ 
 		struct node *temp = start;
 		start = start -> next;
+		start -> prev = NULL; // addition
+		temp -> prev = NULL;
+		temp -> next = NULL;
 		free(temp);
 		temp = NULL;
 		return;
@@ -93,6 +101,8 @@ void delete(){
 		if (--count == 1){
 			struct node *temp = ptr -> next;
 			ptr -> next = temp -> next;
+			temp -> next -> prev = ptr; // addition
+			temp -> prev = NULL; // addition
 			temp -> next = NULL;
 			free(temp);
 			temp = NULL;
@@ -112,8 +122,8 @@ void display(){
 	// 2. Display list
 	printf("\033[32;1m[START]\033[0m");
 	for (struct node *ptr = start ; ptr != NULL ; ptr = ptr -> next)
-		printf(" -> \033[31;1m%d\033[0m", ptr -> data);
-	printf(" -> \033[32;1m[NULL]\033[0m\n");
+		printf(" <-> \033[31;1m%d\033[0m", ptr -> data);
+	printf(" <-> \033[32;1m[NULL]\033[0m\n");
 }
 
 void explain(){
@@ -121,10 +131,10 @@ void explain(){
 	if (start == NULL) printf("List is empty !\n");
 	
 	// 2. Display list
-	printf("\033[32;1m[START]\033[0m is %p",start);
+	printf("\033[32;1m[START]\033[0m is %p\n",start);
 	for (struct node *ptr = start ; ptr != NULL ; ptr = ptr -> next)
-		printf("\n%p  :   \033[31;1m%10d\033[0m  |  %p", ptr , ptr -> data , ptr -> next);
-	printf(" or \033[32;1mNULL\033[0m\n");
+		printf("%12p  :  %12p  |\033[31;1m%10d\033[0m  |  %12p\n", ptr , ptr -> prev , ptr -> data , ptr -> next);
+	//printf(" or \033[32;1mNULL\033[0m\n");
 }
 
 void reverse(){
@@ -135,19 +145,13 @@ void reverse(){
 	}
 	
 	// 2. Reverse list
-	struct node *first = NULL;
-	struct node *middle = start;
-	struct node *last = start -> next;
-	while (true){
-		middle -> next = first;
-		if (last == NULL) {
-			start = middle;
-			break;
-		}
-		first = middle;
-		middle = last;
-		last = last -> next;
-	}	
+	struct node *swap_temp = NULL;
+	for (struct node *ptr = start ; ptr != NULL ; ptr = ptr -> prev){
+		swap_temp = ptr -> next;
+		ptr -> next = ptr -> prev;
+		ptr -> prev = swap_temp;
+		start = ptr;
+	}
 }
 
 void help(){
@@ -220,7 +224,7 @@ int main(){
 	char input[10];
 	printf("\n\033[31;1m");
 	printf(" ---------------------------------  \n");
-	printf("        Linked List Console  \n");
+	printf("        Douby List Console  \n");
 	printf(" ---------------------------------  \n");
 	printf("\n\033[0m");
 	while(true) {
