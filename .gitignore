@@ -1,46 +1,21 @@
-# By: s-m-quadri@github
-# Last Modified: 24 OCT 2021
-
-
-# ======================================================================
-# ======================================================================
-#                    RULE - For working directories
-# ======================================================================
-
-# [STEP 01] Ignore All directories
+# Ignore all
 *
 
-# [STEP 02] Except the working ones
-!/DIEMS_Labs*
-!/Practice_Programs*
+# Except following
 
-# ======================================================================
-# ======================================================================
-
-
-
-# ======================================================================
-# ======================================================================
-#            RULE - For sub files in the diffrent directories
-# ======================================================================
-
-# [STEP 01] Ignore All files
-*/*
-
-
-# [STEP 02] Except the essential ones
-!/DIEMS*/D*
-!/DIEMS*/D*/CollageCodes
-!/Practice*/C
-!/Practice*/Java
+# 1. Diectories
+!/.gitignore
+!/DIEMS_Labs
+!/DIEMS_Labs/ACPL
+!/DIEMS_Labs/DS
+!/DIEMS_Labs/JAVA
+!/Competitive_Programming
+!/Competitive_Programming/Other
 !/LICENSE
 !/README.md
-!/.gitignore
 
-# [STEP 03] Except the working ones
+# 2. Files
 !**.c
+!**.cpp
 !**.h
 !**.java
-
-# ======================================================================
-# ======================================================================
