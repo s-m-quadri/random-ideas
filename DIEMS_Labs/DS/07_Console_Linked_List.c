@@ -19,11 +19,7 @@ struct node *start = NULL;
 // ###########################
 //     Definition Section
 // ###########################
-void insert(){
-	int input = 0 , count = 1;
-	scanf("%d@%d" , &input , &count);
-	
-	
+void insert(int input, int count){
 	// 1. Error check related to user input
 	if(count <= 0 || (start == NULL && count != 1)){
 		printf("sorry ! can't find desire location\n");
@@ -55,10 +51,7 @@ void insert(){
 	return;
 }
 
-void delete(){
-	int count = 1;
-	scanf("%d" , &count);
-	
+void delete(int count){
 	// 1. Error check related to user input
 	if(count <= 0){
 		printf("sorry ! can't find desire location\n");
@@ -226,8 +219,16 @@ int main(){
 	while(true) {
 		printf("\033[34;1mList $: \033[0m");
 		scanf("%s" , input);
-		if (strcmp(input, "add") == 0) insert();
-		else if (strcmp(input, "remove") == 0) delete();
+		if (strcmp(input, "add") == 0){ 
+			int input = 0 , count = 1;
+			scanf("%d@%d" , &input , &count);
+			insert(input, count);
+		}
+		else if (strcmp(input, "remove") == 0) {
+			int count = 1;
+			scanf("%d" , &count);
+			delete(count);
+		}
 		else if (strcmp(input, "show") == 0) display();
 		else if (strcmp(input, "explain") == 0) explain();
 		else if (strcmp(input, "reverse") == 0) reverse();
