@@ -23,24 +23,42 @@
 		a:hover, a:active {
 		  text-decoration: underline;
 		}
-		p:hover, table:hover{
+		p:hover, table:hover, ul:hover{
 			background-color: #ffffe6;
 			transition: background-color 1s;
 		}
 		#google-description{
 			text-align: center;
+			width: 95%;
+			margin: auto;
 		}
 		#yahoo-description{
 			text-align: center;
+			width: 95%;
+			margin: auto;
 		}
-		#head{
+		#head, #foot{
 			text-align: center;
 			background-color: #B8860B;
 			color: #ffffff;
 			padding: 25px;
 		}
 		table{
-			width: 90%;
+			width: 100%;
+		}
+		ul{
+			text-align: left;
+			list-style-type: circle;
+		}
+		input[type=text] {
+		  width: 10%;
+		  padding: 12px;
+		  margin: 8px;
+		  transition: width 1s ease-in-out;
+		}
+		input[type=text]:focus {
+		  width: 40%;
+		  transition: width 1s ease-in-out;
 		}
 		</style>
 		<title>Practical 02</title>
@@ -103,9 +121,23 @@
 		<hr/>
 		<div id="yahoo-description">
 		<h3><a href="https://in.search.yahoo.com/">Yahoo!</a></h3>
-		<p>Yahoo (/ˈjɑːhuː/, styled yahoo! in its logo) is an American web services provider. It is headquartered in Sunnyvale, California and operated by the namesake company Yahoo Inc., which is 90% owned by investment funds managed by Apollo Global Management and 10% by Verizon Communications.</p>
+		<p>Yahoo (/ˈjɑːhuː/, styled yahoo! in its logo) is an American web services provider. It is headquartered in Sunnyvale, California and operated by the namesake company Yahoo Inc., which is</p>
+		<ul>
+			<li>90% owned by investment funds managed by Apollo Global Management and</li>
+			<li> 10% by Verizon Communications.</li>
+		</ul>
 		<p>It provides a web portal, search engine Yahoo Search, and related services, including My Yahoo!, Yahoo Mail, Yahoo News, Yahoo Finance, Yahoo Sports and its advertising platform, Yahoo! Native.</p>
 		<p>Yahoo was established by Jerry Yang and David Filo in January 1994 and was one of the pioneers of the early Internet era in the 1990s. However, usage declined in the late 2000s as it lost market share to Facebook Groups and Google.</p>
+		</div>
+		
+		<div id="foot">
+			<form method="POST">
+				Is this page helpful 
+				<input type="radio" name="feedback" value="Yes">Yes</input>
+				<input type="radio" name="feedback" value="No">No</input>
+				, Any suggestions 
+				<input type="text" name="suggestion" placeholder="write here..." autocomplete="off">
+			</form>
 		</div>
 	</body>
 </html>
