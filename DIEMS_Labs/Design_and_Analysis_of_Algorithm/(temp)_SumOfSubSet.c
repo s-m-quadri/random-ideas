@@ -22,12 +22,14 @@ int main(void){
     scanf("%d", &n);
     p1.target_sum = n;
 
+    // TODO complete implementation
     sum(p1, 0, )
 
     return 0;
 }
 
 void sum(problem p1, int take, int remain, int turn){
+    // TODO complete implementation
     if(remain == 0) return;
     if(turn == p1.no_elements-1) return;
     if(take > target_sum) return;
