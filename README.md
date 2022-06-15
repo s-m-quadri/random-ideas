@@ -1,26 +1,10 @@
-### :balance_scale: In The Name Of Allah The Most And Forever Merciful
+:octocat: Nothing Here!!!
 
 
-#  PROGRAMMING IDEAS
-
-# Purpose
-
-:octocat: For the sake of backups.
-
-:octocat: May Help other to begin.
-
-:octocat: May Help other to understand a different kind of approach.
-
-:octocat: Maybe Helpful for practice.
-
-
-## Link 
-
+# Deprecation Notice:
+As of June 2022, this codebase is deprecated.
+Head to the fresh repository at https://github.com/s-m-quadri/DIEMS-Lab-Work
+### Fresh Link - DIEMS-Lab-Work 
 ``` 
-https://github.com/s-m-quadri/random-ideas.git
+[https://github.com/s-m-quadri/random-ideas.git](https://github.com/s-m-quadri/DIEMS-Lab-Work)
 ```
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=s-m-quadri&show_icons=true)
-
-
-## Thank You Very Much For Visiting
